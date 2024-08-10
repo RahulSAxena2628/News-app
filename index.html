@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a onclick="reload()" class="company-logo" href="#">
+                <img src="logo.jpg"  alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="hover-link nav-item" id="India" onclick="onNavItemClick('India')">India</li>
+
+                </ul>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" class="news-input" id="news-input" placeholder="e.g. science">
+                <button class="search" id="search-btn">search</button>
+            </div>
+        </div>
+    </nav>
+
+
+<main>
+    <div class="cards-container container flex" id="cards-container"></div>
+</main>
+
+ <main>
+    
+    
+    <template id="templete-news-card">
+        <div class="cards-container container flex" >
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">this is the title</h3>
+                    <h6 class="news-sourse" id="news-sourse">and gaget 26/07/2025</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, exercitationem officiis dolore sunt, a quam commodi nemo, at deserunt sint sed. Eius consequuntur exercitationem saepe cum dolor sapiente cupiditate recusandae.</p>
+                </div>
+            </div>
+
+          
+
+          
+          
+        </div>
+
+
+        
+    </template>
+
+    </main>
+     
+
+     
+    <script src="script.js"></script>
+</body>
+</html>
